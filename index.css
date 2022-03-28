@@ -182,4 +182,20 @@ input[type="checkbox"]{
    background: white;
    color: black;
  }
- 
+ /* footer */
+
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #4d089c;
+  padding: 0 40px 5px 0;
+  height: 50px;
+}
+
+
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  
+}

@@ -33,39 +33,130 @@ html {
   color: white;
 }
 
-.container {
-  padding: 0 16px;
+.container{
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-image: url('andela5.jpg');
+}
+.container .box{
+  width: calc(33% - 10px);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.box .quote i{
+margin-top: 10px;
+font-size: 45px;
+color: #17c0eb
+}
+.container .box .image{
+  margin: 10px 0;
+  height: 150px;
+  width: 150px;
+  background: #8e44ad;
+  padding: 3px;
+  border-radius: 50%;
+}
+.box .image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+.box p{
+  text-align: justify;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.box .name_job{
+  margin: 10px 0 3px 0;
+  color: #8e44ad;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
+.btns{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
-
-.button:hover {
-  background-color: #555;
+.btns button{
+  background: #8e44ad;
+  width: 100%;
+  padding: 9px 0px;
+  outline: none;
+  border: 2px solid #8e44ad;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8e44ad;
+  transition: all 0.3s linear;
+}
+.btns button:first-child{
+  background: none;
+  margin-right: 5px;
+}
+.btns button:last-child{
+  color: rgb(19, 10, 146);
+  margin-left: 5px;
+}
+.btns button:first-child:hover{
+  background: #8e44ad;
+  color: #fff;
+}
+.btns button:hover{
+  color: rgb(52, 8, 122);
+}
+@media (max-width:1045px){
+  .container .box{
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  }
+}
+@media (max-width:710px){
+  .container .box{
+  width: 100%;
+  }
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
+@media (max-width: 920px) {
+  nav .menu-btn i{
     display: block;
   }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+ 
+    
+  }
+}
+
+/* footer */
+
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #4d089c;
+  padding: 0 40px 5px 0;
+  height: 50px;
+}
+
+
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  
 }
