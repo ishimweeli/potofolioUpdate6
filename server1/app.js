@@ -1,20 +1,51 @@
-const express = require ('express');
-const routes = require('./routes/queries'); 
-const routes1 = require('./routes/article'); 
-// import the routes
-
+import express, { json } from 'express';
+import routes from './routes/queries.js';
+import routes1 from './routes/article.js'; 
+import routes2 from './routes/user.js';
+import swaggerUI from 'swagger-ui-express';
+import swaggerJsDoc from 'swagger-jsdoc';
+// import cors from 'cors'
 const app = express();
+import yaml from 'yamljs'
+const options={
+    definition:{
+        openapi:"3.0.0",
+        info:{
+            title:"My Brand API",
+            version:"1.0.0",
+            description:" my personal portfolio api access it by clicking on this "
+        },
+        servers:[{
+             url:"http://localhost:5000"
+        }],
+    },
+    apis:["./routes/*.js"]
+}
 
-require('dotenv').config();
+// app.use(cors)
+const specs=swaggerJsDoc(options)
+app.use("/api-docs",swaggerUI.serve,swaggerUI.setup(specs))
 
-app.use(express.json());
+
+// import the routes
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+app.use(json());
+
+
+
 app.use('/', routes);
+app.use('/', routes2);
 app.use('/', routes1);
+
+
 
  //to use the routes
  
  //import mongoose
- const mongoose = require('mongoose');
+
+import  mongoose from "mongoose";
 
  //establish connection to database
  mongoose.connect(
@@ -31,3 +62,4 @@ app.use('/', routes1);
 const listener = app.listen(process.env.PORT || 5000, () => {
     console.log('Your app is listening on port ' + listener.address().port)
 })
+export default listener;

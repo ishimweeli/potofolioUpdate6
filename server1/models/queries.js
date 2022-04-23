@@ -1,4 +1,4 @@
-const mongoose = require("mongoose"); //import mongoose
+import mongoose from "mongoose"; //import mongoose
 
 // tea schema
 const queriesSchema = new mongoose.Schema({
@@ -10,4 +10,4 @@ const queriesSchema = new mongoose.Schema({
 });
 
 const queries = mongoose.model('queries', queriesSchema); //convert to model named queries
-module.exports = queries; //export for controller use
+export default queries; //export for controller use
