@@ -1,7 +1,29 @@
 {
   "dependencies": {
+    "configure-env": "^1.0.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
     "multer": "^1.4.4",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0"
-  }
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "potofolioupdate6",
+  "description": "my ptptfolio",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishimweeli/potofolioUpdate6.git"
+  },
+  "author": "eliab ishimwe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishimweeli/potofolioUpdate6/issues"
+  },
+  "homepage": "https://github.com/ishimweeli/potofolioUpdate6#readme"
 }
