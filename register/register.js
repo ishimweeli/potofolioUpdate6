@@ -49,36 +49,3 @@ const handleRegister = async () => {
     // console.log(data);
  
 }
-// const displayData = async () => {
-//     const register = await fetch('http://localhost:5000/register', {
-//         method: 'POST', // or 'PUT'
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(data),
-//     })
-// }
-// console.log("hello world")
-//     const data = await register.json()
-//     let ui = ''
-//     data.map(register => {
-//         ui += `<div class="box">
-//         <div class="image">
-//            <img src="pic me1.jpg">
-//           </div>
-//           <div class="name_job">${article.title}</div>
-          
-//           <p>
-//           ${article.articleBody}</p>
-//           </p>
-//           <div class="btns">
-//             <button>Read More</button>
-//             </div>
-//         </div>`
-//     })
-//     console.log("The ui is: " + ui)
-//     console.log("The containerComments", containerComponents)
-//     containerComponents[ 0 ].innerHTML = ui
-//     console.log(data)
-// }
-// displayData()
