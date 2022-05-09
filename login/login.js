@@ -21,7 +21,7 @@ const handleLogin = async () => {
     })
     const login = await res.json()
     sessionStorage.setItem('token', login.token)
-    if (login.token && login.email === 'eliab0@gmail.com') window.location.href = "../dashboardupdate5-main/dashboard.html"
+    if (login.token && login.email === 'eliab0@gmail.com') window.location.href = "/dashboardupdate5-main/dashboard.html"
     console.log(login)
 
 }
