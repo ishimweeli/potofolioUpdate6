@@ -201,3 +201,136 @@
 		}
 	  }
 	  
+:root {
+	--red: rgb(209, 3, 3);
+	--white: rgb(32, 104, 170);
+	--black: #000;
+}
+
+.btn {
+	width: 100px;
+	height: 44px;
+	outline: 0;
+	border: 2px solid #ccc;
+	color: #000;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.05);
+	transition: 1.5s cubic-bezier(.21, .04, .26, .99);
+}
+
+.btn:hover {
+	box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
+	border-color: var(--red);
+}
+
+.btn-like {
+
+	font-size: 2rem;
+	border-radius: 10px;
+	background: rgb(14, 60, 119);
+	transition: 1.5s cubic-bezier(.21, .04, .26, .99);
+}
+
+.btn-like.liked {
+	background: var(--red);
+	border-color: var(--red);
+}
+
+/*-- Button Icon -- */
+.btn-icon {
+	display: inline-block;
+	width: 32px;
+	height: 36px;
+	position: absolute;
+	left: 1.5rem;
+	transition: 1s cubic-bezier(.21, .04, .26, .99);
+	transform: rotate(0deg)
+}
+
+.btn:hover .btn-icon {
+	color: var(--red);
+}
+
+.btn.liked:hover .btn-icon {
+	color: var(--black);
+}
+
+.liked .btn--icon-default {
+	transform: rotate(-90deg)
+}
+
+.btn:not(.liked).btn--icon-liked {
+	transform: rotate(-90deg)
+}
+
+.liked .btn--icon-default,
+.btn--icon-liked {
+	opacity: 0;
+	color: rgb(54, 30, 161);
+	position: absolute;
+}
+
+.btn--icon-default,
+.liked .btn--icon-liked {
+	opacity: 1;
+	left: 1.5rem;
+}
+
+/*-- Button Content -- */
+.btn-content {
+	transition: transform 0.1s ease;
+	display: inline-block;
+	/* position: absolute;
+		right: 0; */
+}
+
+.liked .btn-content {
+	color: var(--white);
+}
+
+.btn:hover.liked .btn-content {
+	color: var(--black);
+}
+
+.btn:not(.liked) .btn-content--liked {
+	transform: translate(110px)
+}
+
+.btn:not(.liked) .btn-content--default {
+	transform: translate(-56px)
+}
+
+.liked .btn-content--default {
+	transform: translate(24px)
+}
+
+
+.container_comments {
+	max-width: 640px;
+	margin: 30px auto;
+	background: #f3f3f7;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.comment {
+	width: 400px;
+	display: block;
+	size: 16px;
+	transition: all 1s;
+}
+
+.commentClicked {
+	min-height: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px 10px
+}
+
+.likes {
+	display: flex;
+}
