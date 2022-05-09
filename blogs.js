@@ -25,9 +25,3 @@ const displayData = async () => {
     console.log(data)
 }
 displayData()
-// const returnedArticles = getArticles()
-// console.log(returnedArticles)
-// console.log(returnedArticles)
-// fetch('http://localhost:5000/articles')
-//     .then(response => response.json())
-//     .then(data => console.log(data));
