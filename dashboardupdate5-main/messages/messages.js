@@ -16,7 +16,7 @@ const displayQueries = async () => {
     data.map(queries => {
         ui += `<div class="message-body">
         <p>
-        ${queries.message}
+        ${queries.date}
         </p>
         <p>
         ${queries.name}
