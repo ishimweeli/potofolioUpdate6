@@ -10,7 +10,8 @@ body {
 .container {
     clear: both;
     position: relative;
-    display: flex
+    /* display: flex; */
+        width: 100%;
 }
 
 .dashboard {

@@ -45,7 +45,7 @@ const handleRegister = async () => {
            error[0].innerHTML ="Not registered. Please, try again" 
         }
    
-}
-    // console.log(data);
- 
+    }
+    sessionStorage.setItem('token', register.token)
+    if (register.token) window.location.href = "/login/login.html"
 }

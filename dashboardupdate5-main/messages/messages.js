@@ -16,6 +16,9 @@ const displayQueries = async () => {
     data.map(queries => {
         ui += `<div class="message-body">
         <p>
+        ${queries.message}
+        </p>
+        <p>
         ${queries.name}
         </p>
         <p>
@@ -23,6 +26,7 @@ const displayQueries = async () => {
         <p>
         <h3>Message:</h3>${queries.message}
         </p>
+        
     </div>`
     })
     console.log("The ui is: " + ui)
