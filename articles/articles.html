@@ -3,14 +3,24 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="articles.css">
 </head>
 
 <body>
+    <a class="button primary cancel">update articles</a>
+    <a class="button condensed cancel">update</a>
+    <a class="button touch cancel"></a>
+    <a class="button inlineIcon cancel"></a>
+    <br><br>
+    
+    <a class="button primary delete">Delete articles</a>
+    <a class="button condensed delete">Delete</a>
+    <a class="button touch delete"></a>
+    <a class="button inlineIcon delete"></a>
+    <br><br>
     <form>
         <div class="container">
-            <span class="return"> <a href="../dashboardupdate5-main/dashboard.html" class="dashboard">return to
-                    dashboard?</a></span>
             <center>
                 <h1> article upload form</h1>
             </center>
@@ -26,7 +36,10 @@
             <input type="file" id="img" name="image">
             <p style="color:red" class="error-message"></p>
             <button type="submit" class="registerbtn" onclick="handleArticles()" id="submit">Submit</button>
+            <span class="return"> <a href="../dashboardupdate5-main/dashboard.html" class="dashboard">return to
+                    dashboard?</a></span>
     </form>
+
     <script src="articles.js" type="text/javascript"></script>
 </body>
 
