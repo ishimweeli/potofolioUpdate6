@@ -13,7 +13,7 @@ const displayData = async () => {
           <div class="name_job">${article.date}</div>
           <div class="name_job">${article.title}</div>
 
-<div class="name_job">${article.author}</div>
+        <div class="name_job">${article.author}</div>
           <p>
         ${article.articleBody}</p>
           <div class="likes">
