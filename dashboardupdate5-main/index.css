@@ -276,6 +276,7 @@ nav .profile-details i{
 .sales-boxes .box .title{
   font-size: 24px;
   font-weight: 500;
+  background-color: #0d3073;
   /* margin-bottom: 10px; */
 }
 .sales-boxes .sales-details li.topic{
