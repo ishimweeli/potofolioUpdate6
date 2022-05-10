@@ -13,8 +13,9 @@ const displayData = async () => {
           <div class="name_job">${article.date}</div>
           <div class="name_job">${article.title}</div>
 
+<div class="name_job">${article.author}</div>
           <p>
-        ${article.articleBody}
+        ${article.articleBody}</p>
           <div class="likes">
           <button class="btn btn-like" id="like">
     <span class="btn-icon btn--icon-default">
