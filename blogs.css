@@ -66,10 +66,10 @@
 	  justify-content: space-between;
 	  align-items: center;
 	  flex-wrap: wrap;
-	  padding: 20px;
+	padding: 5px;
 	}
 	.container .box{
-	width: calc(100%);
+	width: calc(33%);
 	  background: #fff;
 	  display: flex;
 	  flex-direction: column;
@@ -78,7 +78,7 @@
 	  padding: 20px 30px;
 	  border-radius: 5px;
 	margin-bottom: 10px;
-		margin-right: 10px;
+		margin-right: 0px;
 	}
 	.box .quote i{
 	margin-top: 10px;
@@ -86,8 +86,8 @@
 	color: #17c0eb
 	}
 	.container .box .image{
-	height: 300px;
-		width: 400px;
+	height: 100px;
+		width: 88px;
 	  background: #8e44ad;
 	  padding: 3px;
 	border-radius: 50%;
