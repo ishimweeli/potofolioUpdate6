@@ -21,7 +21,7 @@ const displayData = async () => {
         ui += `<div class="box">
         <div class="image">
 
-           <img src="${article.img}">
+           <img src="./articles/download.jpg">
           </div>
           <div class="name_job">${article.date}</div>
           <div class="name_job">${article.title}</div>

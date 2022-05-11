@@ -36,7 +36,7 @@ const displayData = async () => {
         ui += `<div class="box">
         <div class="image">
 
-           <img src="${data.img}">
+           <img src="https://media.sproutsocial.com/uploads/2019/09/how-to-write-a-blog-post.svg">
           </div>
           <div class="name_job">${data.date}</div>
           <div class="name_job">${data.title}</div>
