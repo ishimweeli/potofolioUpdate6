@@ -70,7 +70,7 @@
 	}
 	.container .box{
 	width: calc(33%);
-	height: calc(400px);
+	height: calc(450px);
 	  background: #fff;
 	  display: flex;
 	  flex-direction: column;
