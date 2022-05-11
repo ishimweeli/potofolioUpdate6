@@ -17,7 +17,8 @@ const handleQueries = async () => {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
-    })
+    }).windows.location.reload();
+
     console.log(data);
 
 }

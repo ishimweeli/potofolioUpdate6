@@ -21,14 +21,14 @@ const displayData = async () => {
         ui += `<div class="box">
         <div class="image">
 
-           <img src="./articles/download.jpg">
+           <img src="${article.img}">
           </div>
           <div class="name_job">${article.date}</div>
           <div class="name_job">${article.title}</div>
 
         <div class="name_job">${article.author}</div>
           <p>
-        ${article.articleBody ? article.articleBody.slice(0, 200) : ""} ${article && article.articleBody && article.articleBody.length >= 200 ? "..." : ""}</p>
+        ${article.articleBody ? article.articleBody.slice(0, 20) : ""} ${article && article.articleBody && article.articleBody.length >= 200 ? "..." : ""}</p>
 
           <div class="btns">
             <button id='${article._id}' onClick='handleReadMore()'>read more</button>
