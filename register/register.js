@@ -39,15 +39,18 @@ const handleRegister = async () => {
                 },
                 body: JSON.stringify(data),
             })   
-            // window.alert("registered successfully")
-            popup(alert("registered successfully "))
+            // window.location.reload();
+            window.alert("registered successfully")
+            // window.popup(alert("registered successfully "))
+
         } catch (err) {
             // console.log(error)
             // message="Not registered. Please, try again" 
            error[0].innerHTML ="Not registered. Please, try again" 
         }
+        // dialog.show("registered successfully");
 
     }
-    sessionStorage.setItem('token', register.token)
-    if (register.token) window.location.href = "/login/login.html"
+    // sessionStorage.setItem('token', register.token)
+    // if (register.token) window.location.href = "/login/login.html"
 }
